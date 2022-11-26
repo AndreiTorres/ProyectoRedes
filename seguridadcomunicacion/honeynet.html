@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HoneyNet</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <nav>
+            <div id="logo" >
+                <a href="../index.html">Infonet</a>
+              </div>
+          <ul>
+            
+            <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Seguridad en la comunicación &nbsp;<i class="fa fa-caret-down"></i></a>
+              <div class="dd">
+                <div id="up_arrow"></div>
+              <ul>
+                <li><a href="./redperimetral.html">Redes Perimetrales</a></li>
+                <li><a href="#">Honeynets</a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a href="#">Seguridad en la Web &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+                
+                <li><a href="../seguridadweb/https.html">HTTPS</a></li>
+                <li><a href="../seguridadweb/ssl.html">SSL</a></li>
+                <li><a href="../seguridadweb/certificado-ssl.html">Certificado SSL</a></li>
+              </ul>
+              </div>
+              <li><a href="#">Programación con Sockets</a></li>
+              <li><a href="#">Internet de las Cosas</a></li>
+              <li><a href="#">Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    <h1>Honeynet o Red trampa</h1>
+    <img src="./imgs/img-honeynet.jpg" alt="">
+    <article>
+        <h2>Definición de una Honeynet</h2>
+        <p>Una Honeynet es una red configurada con vulnerabilidades intencionales alojadas en un servidor señuelo para
+            atraer a los piratas informáticos. El objetivo principal es probar la seguridad de la red invitando a los
+            ataques. Este enfoque ayuda a los expertos en seguridad a estudiar las actividades y los métodos de un
+            atacante real para mejorar la seguridad de la red.</p>
+        <h3>¿Cuál es la diferencia entre un honeypot y una honeynet?</h3>
+        <p>Una honeynet contiene uno o más honeypots, que son sistemas informáticos en Internet. Están configurados
+            expresamente para atraer y atrapar a los intrusos que intentan penetrar en los sistemas informáticos de
+            otras personas. Aunque el objetivo principal de una honeynet es recopilar información sobre los métodos y
+            motivos de los atacantes, la red señuelo puede beneficiar a su operador de otras maneras, como desviar a los
+            atacantes de la red real y sus recursos.</p>
+
+        <p>Además de los honeypots, una red trampa suele albergar aplicaciones y servicios reales para que parezca una
+            red de producción real y un objetivo que valga la pena. Sin embargo, debido a que la red trampa en realidad
+            no sirve a ningún usuario autorizado, cualquier intento de contactar la red se considera un intento ilícito
+            de violar su seguridad. Como tal, cualquier actividad de salida es probablemente una prueba de que un
+            sistema se ha visto comprometido</p>
+        <img src="./imgs/img-honeynetinfra.png" alt="Honeynet">
+        <p>Por esta razón, la información sospechosa es mucho más evidente de lo que sería en una red real, donde
+            tendría que ser rastreada en medio de todo el tráfico y los datos legítimos de la red. Las aplicaciones
+            dentro de una red trampa suelen tener nombres familiares como finanzas o recursos humanos para que resulten
+            atractivas para un atacante.</p>
+        <p>Una red trampa virtual es aquella que, aunque parece ser una red física, es una imagen virtual de una red que
+            reside en un solo servidor. Como no es un sistema de red, los analistas de seguridad informática no tienen
+            que perder el tiempo examinando a los usuarios legítimos que se encuentran en las redes del mundo real.</p>
+        <p>Como una red trampa no puede detectar ataques en sistemas legítimos, siempre existe el riesgo de que un
+            atacante se mueva lateralmente de la red trampa a un segmento de red de producción para penetrar en la red
+            real. Para mitigar el riesgo, es mejor aislar la red trampa y monitorearla de manera proactiva.</p>
+        <img src="./imgs/img-honeynetworks.png" alt="">
+        <h3>¿Qué es una Honeywall?</h3>
+        <p>Se utiliza un honeywall para monitorear el tráfico de la red y desviar a los actores maliciosos a las
+            instancias del honeypot. En un escenario de honeywall, los expertos en seguridad a menudo inyectan más
+            vulnerabilidades en una red trampa para facilitar que los atacantes accedan a la trampa.</p>
+        <p>Como cualquier punto de la red puede ser un punto de entrada, es importante monitorear el tráfico en tiempo
+            real y desviar a los atacantes de la red real.</p>
+        <h3>¿Qué es el Proyecto Honeynet?</h3>
+        <p>Honeynet Project es una organización de investigación internacional sin fines de lucro dedicada a la
+            seguridad informática y el intercambio de información. Como tal, The Honeynet Project promueve activamente
+            el despliegue de redes trampa.</p>
+        <p>La organización también está comprometida con el desarrollo de herramientas de seguridad de código abierto ,
+            el estudio de los últimos métodos de piratería y la investigación de los últimos ataques cibernéticos.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gtk2qphHKmA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </article>
+</body>
+
+</html>

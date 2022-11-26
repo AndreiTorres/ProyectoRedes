@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Certificado SSL</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <nav>
+            <div id="logo" >
+                <a href="../index.html">Infonet</a>
+              </div>
+          <ul>
+            
+            <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Seguridad en la comunicación &nbsp;<i class="fa fa-caret-down"></i></a>
+              <div class="dd">
+                <div id="up_arrow"></div>
+              <ul>
+                <li><a href="../seguridadcomunicacion/redperimetral.html">Redes Perimetrales</a></li>
+                <li><a href="../seguridadcomunicacion/honeynet.html">Honeynets</a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a href="#">Seguridad en la Web &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+                
+                <li><a href="./https.html">HTTPS</a></li>
+                <li><a href="./ssl.html">SSL</a></li>
+                <li><a href="#">Certificado SSL</a></li>
+              </ul>
+              </div>
+              <li><a href="#">Programación con Sockets</a></li>
+              <li><a href="#">Internet de las Cosas</a></li>
+              <li><a href="#">Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+    <h1>¿Qué es un certificado SSL?</h1>
+    <img src="./imgs/img-certificado-ssl.png" alt="">
+    <article>
+        <p>Un certificado SSL es un pequeño archivo de datos que vincula digitalmente una clave criptográfica con los
+            datos de una organización. Una vez instalado en el servidor web, el certificado activa el candado y el
+            protocolo https y, de esta forma, se habilita una conexión segura desde el servidor web hasta el navegador.
+            Normalmente, el SSL se utiliza para proteger las transacciones con tarjeta de crédito, la transferencia de
+            datos y los inicios de sesión y, más recientemente, se está convirtiendo en el estándar para proteger la
+            navegación por redes sociales.
+        </p>
+        <p>Los certificados SSL vinculan:</p>
+        <ul>
+            <li>Un nombre de dominio, un nombre de servidor o nombre de host</li>
+            <li>La identidad de una organización (es decir, el nombre de la empresa) y su ubicación.</li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dsuVPxuU_hc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p>Para poder iniciar sesiones seguras en los navegadores, las organizaciones deben instalar el certificado SSL
+            en sus servidores web. Una vez establecida la conexión segura, el tráfico entre el servidor web y el
+            navegador web estará protegido.</p>
+        <p>Después de instalar correctamente el certificado en su servidor, el protocolo de aplicación (denominado
+            también HTTP) cambiará a HTTPs, donde «S» significa «Seguridad».</p>
+        <h3>¿Cómo funcionan los certificados SSL?</h3>
+        <p>Los certificados SSL utilizan una tecnología denominada cifrado de clave pública (Inglés).</p>
+        <p>Este tipo específico de cifrado recurre al uso de dos claves, que son secuencias largas de números generados
+            aleatoriamente. Este par de claves está compuesto por una clave privada y una clave pública. La clave
+            pública, conocida por su servidor y de dominio público, permite cifrar cualquier mensaje. Cuando Alicia
+            envíe un mensaje a Daniel, primero lo bloqueará con la clave pública de Daniel. La única forma de
+            descifrarlo será aplicando la clave privada de Daniel, que solo él posee. De esta forma, él será el único
+            que podrá usarla para desbloquear el mensaje de Alicia. Si un intruso intercepta el mensaje antes de que
+            Daniel lo desbloquee, lo único que visualizará será un código criptográfico que no podrá descifrar, ni
+            siquiera recurriendo a la computación.</p>
+        <p>En lo que respecta a los sitios web, la comunicación se realiza entre el sitio web y un servidor. Su sitio
+            web y el servidor serían Alicia y Daniel.</p>
+        <h3>¿Por qué necesito un certificado SSL?</h3>
+        <p>Los certificados SSL protegen su información sensible, como la información de su tarjeta de crédito, los
+            nombres de usuario, las contraseñas, etc. Además:</p>
+        <ul>
+            <li>Protegen los datos entre servidores;</li>
+            <li>Mejoran el posicionamiento de su página;</li>
+            <li>Refuerzan/mejoran la confianza de los clientes;</li>
+            <li>Mejoran las tasas de conversión.</li>
+        </ul>
+        <h3>¿Dónde puedo comprar un certificado SSL?</h3>
+        <p>Los certificados SSL deben ser emitidos por una Autoridad de Certificación de confianza. Los navegadores,
+            sistemas operativos y dispositivos móviles cuentan con una lista de certificados raíz de AC de confianza.
+        </p>
+        <p>El certificado raíz debe estar presente en la computadora del usuario final para que cuente con confianza. En
+            caso contrario, el navegador mostrará al usuario final un mensaje de error alertando de que la conexión no
+            es fiable. En el caso de las transacciones de comercio electrónico, estos mensajes de error generan dudas
+            inmediatas acerca de la página web y las empresas corren el riesgo de perder la confianza depositada en
+            ellas y dejar de recibir pedidos de la mayoría de sus clientes.</p>
+        <p>Las empresas como GlobalSign son Autoridades de Certificación reconocidas. Este reconocimiento se debe a que
+            los proveedores de navegadores y sistemas operativos como Microsoft, Mozilla, Opera, Blackberry, Java, etc.
+            confían en la legitimidad de la Autoridad de Certificación GlobalSign y en su capacidad para emitir
+            certificados SSL de confianza. Cuantas más aplicaciones, dispositivos y navegadores tengan integrada la raíz
+            de la Autoridad de Certificación, mayor es el grado de «reconocimiento» y seguridad que los certificados SSL
+            pueden ofrecer.</p>
+        <p>GlobalSign fue fundada en 1996 en Europa y sigue siendo una de las Autoridad de Certificación con la
+            trayectoria más larga de la región.</p>
+    </article>
+
+</body>
+
+</html>

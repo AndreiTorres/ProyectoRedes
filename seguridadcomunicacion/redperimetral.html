@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Redes Perimetrales</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <nav>
+            <div id="logo" >
+                <a href="../index.html">Infonet</a>
+              </div>
+          <ul>
+            
+            <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Seguridad en la comunicación &nbsp;<i class="fa fa-caret-down"></i></a>
+              <div class="dd">
+                <div id="up_arrow"></div>
+              <ul>
+                <li><a href="#">Redes Perimetrales</a></li>
+                <li><a href="./honeynet.html">Honeynets</a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a href="#">Seguridad en la Web &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+                
+                <li><a href="../seguridadweb/https.html">HTTPS</a></li>
+                <li><a href="../seguridadweb/ssl.html">SSL</a></li>
+                <li><a href="../seguridadweb/certificado-ssl.html">Certificado SSL</a></li>
+              </ul>
+              </div>
+              <li><a href="#">Programación con Sockets</a></li>
+              <li><a href="#">Internet de las Cosas</a></li>
+              <li><a href="#">Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+    <h1>Seguridad perimetral informática. Qué es y objetivos</h1>
+    <img src="./imgs/img-seguridad.jpg" alt="Seguridad perimetral">
+    <article>
+        <h2>Definición de seguridad perimetral</h2>
+        <p>La seguridad del perímetro proviene de un sistema multiproposito integrado que detecta amenazas, realiza
+            vigilancia y analiza patrones de ataque. Como tal, a menudo sirve como la primera línea de defensa de una
+            red contra muchos peligros que pueden dañar los sistemas conectados.</p>
+        <p>En informática, la seguridad perimetral es un método de defensa de las redes informáticas, que consiste
+            instalar equipos de comunicaciones en los que se establece las políticas de seguridad necesarias para su
+            óptimo funcionamiento; estos equipos se los coloca entre la red externa y la red interna, permitiendo o
+            denegando el acceso a los usuarios internos y externos a los diferentes servicios de la red.</p>
+        <p>La seguridad perimetral en informática consiste en elementos y sistemas integrados, tanto electrónicos como
+            mecánicos, que protegen un área física, como una empresa o un aeropuerto, que disuade y detecta intrusos.
+        </p>
+        <p>Los principales desafíos de la seguridad perimetral son la confiabilidad de la detección, el comportamiento
+            de los dispositivos en condiciones climáticas adversas, la adecuación a las características físicas del
+            perímetro, la transmisión de señales y la tasa de falsas alarmas.</p>
+        <h2>Tipos de sistemas perimetrales</h2>
+        <p>Los sistemas de seguridad perimetral informática están compuestos por sistemas y equipos eléctricos y
+            mecánicos integrados que protegen el perímetro exterior de una propiedad que queremos mantener segura. Su
+            objetivo principal es detectar intrusos.</p>
+        <p>Clasificamos estos sistemas según el método de detección utilizado.</p>
+        <h3>Abiertos</h3>
+        <p>Son aquellos que dependen de las condiciones ambientales para detectar. Por ejemplo, la video vigilancia, las
+            barreras infrarrojas y las barreras de microondas. Esta característica provoca falsas alarmas o falta de
+            sensibilidad en condiciones ambientales adversas.</p>
+        <h3>Cerrados</h3>
+        <p>Son los que no dependen del medio ambiente y controlan exclusivamente el parámetro de control. Por ejemplo,
+            los históricos cables microfónicos, la fibra óptica y los piezo-sensores. Este tipo de sensores suele tener
+            un coste más elevado.</p>
+        <h2>Seguridad perimetral informática</h2>
+        <p>El perímetro de la red es una línea de defensa importante en una red empresarial y cada organización tiene
+            esta red perimetral. La red perimetral es donde la red interna se encuentra con la red fronteriza. La
+            arquitectura de seguridad perimetral que utiliza esta área potencial de la red es el firewall.</p>
+        <p>Una de las ideas centrales detrás de la protección de la red frente a amenazas externas es desarrollar e
+            implementar múltiples capas superpuestas de soluciones de seguridad con diferentes componentes de seguridad
+            como firewalls, VPN, IDS / P y Proxying.</p>
+        <p>Aunque no existe una única solución de seguridad para proteger la red, las múltiples capas de la solución de
+            seguridad perimetral brindarán la máxima protección disponible contra amenazas externas e internas.</p>
+        <p>Los principales desafíos para diseñar e implementar una seguridad perimetral es determinar el diseño adecuado
+            del firewall, ya que el firewall perimetral y los enrutadores fronterizos son componentes clave que deciden
+            la seguridad de la red interna.</p>
+        <p>La mayoría de los ataques de hoy en día ocurren en la capa de aplicación y el filtrado en esta capa superior
+            es
+            extremadamente importante para un diseño de seguridad exitoso. Se requiere una inspección de paquetes
+            mejorada
+            con monitoreo e informes adecuados en todos los puntos finales de la red para bloquear el tráfico malicioso
+            dentro y fuera de la red. Hay varias formas y técnicas involucradas en el diseño de una seguridad perimetral
+            y
+            este diseño propone las soluciones específicas para las amenazas de seguridad en una red de campus amplia
+            que en
+            una red empresarial altamente compleja.</p>
+        <h3>
+            Elementos de protección
+        </h3>
+        <p>Para proteger la seguridad perimetral existen distintos mecanismos que veremos a continuación.</p>
+        <h4>Cortafuegos</h4>
+        <img src="./imgs/img-cortafuegos.jpg" alt="Cortafuegos">
+        <p>Un cortafuegos es un sistema de seguridad de red de computadoras que restringe el tráfico de Internet dentro,
+            fuera o dentro de una red privada.</p>
+        <p>Un cortafuegos es un sistema de seguridad de red de computadoras que restringe el tráfico de Internet dentro,
+            fuera o dentro de una red privada.</p>
+        <p>Los cortafuegos pueden verse como fronteras cerradas o puertas de enlace que gestionan el recorrido de la
+            actividad web permitida y prohibida en una red privada. El término proviene del concepto de que las paredes
+            físicas son barreras para frenar la propagación del fuego hasta que los servicios de emergencia puedan
+            extinguirlo. De manera similar, los firewalls de seguridad de red son para la gestión del tráfico web, por
+            lo general destinados a ralentizar la propagación de amenazas web.</p>
+
+        <h4>Redes virtuales privadas o VPN</h4>
+        <img src="./imgs/img-vpn.jpg" alt="VPN">
+        <p>Una red privada virtual o VPN, es una conexión encriptada a través de Internet desde un dispositivo a una
+            red. La conexión cifrada ayuda a garantizar que los datos confidenciales se transmitan de forma segura.
+            Evita que personas no autorizadas escuchen el tráfico y permite al usuario realizar el trabajo de forma
+            remota. La tecnología VPN se usa ampliamente en entornos corporativos.</p>
+        <p>
+            Una VPN extiende una red corporativa a través de conexiones encriptadas realizadas a través de Internet.
+            Debido a que el tráfico está encriptado entre el dispositivo y la red, el tráfico permanece privado mientras
+            viaja. Un empleado puede trabajar fuera de la oficina y aún así conectarse de forma segura a la red
+            corporativa. Incluso los teléfonos inteligentes y las tabletas pueden conectarse a través de una VPN.
+        </p>
+        <p>El tráfico en la red virtual se envía de forma segura al establecer una conexión encriptada a través de
+            Internet conocida como túnel. El tráfico de VPN de un dispositivo como una computadora, tableta o teléfono
+            inteligente se cifra mientras viaja a través de este túnel. Los empleados externos pueden utilizar la red
+            virtual para acceder a la red corporativa.</p>
+        <h3>¿Para qué sirve la seguridad perimetral en informática?</h3>
+        <p>Los principales objetivos de la seguridad informática son:</p>
+        <ul>
+            <li>Soportar los ataques externos.</li>
+            <li>Detectar e identificar los ataques recibidos y alertar acerca de ellos.</li>
+            <li>Segmentar y securizar los sistemas y servicios en función de su superficie de ataque.</li>
+            <li>Filtrar y bloquear el trafico ilegítimo.</li>
+        </ul>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SSL</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <nav>
+          <div id="logo" >
+            <a href="../index.html">Infonet</a>
+          </div>
+          <ul>
+            
+            <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Seguridad en la comunicación &nbsp;<i class="fa fa-caret-down"></i></a>
+              <div class="dd">
+                <div id="up_arrow"></div>
+              <ul>
+                <li><a href="../seguridadcomunicacion/redperimetral.html">Redes Perimetrales</a></li>
+                <li><a href="../seguridadcomunicacion/honeynet.html">Honeynets</a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="dropdown"><a href="#">Seguridad en la Web &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+                
+                <li><a href="./https.html">HTTPS</a></li>
+                <li><a href="#">SSL</a></li>
+                <li><a href="./certificado-ssl.html">Certificado SSL</a></li>
+              </ul>
+              </div>
+              <li><a href="#">Programación con Sockets</a></li>
+              <li><a href="#">Internet de las Cosas</a></li>
+              <li><a href="#">Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+    <h1>SSL (Secure Sockets Layer)</h1>
+    <img src="./imgs/img-ssl.jpg" alt="">
+    <article>
+        <h2>¿Qué es el SSL?</h2>
+        <p>El Nivel de Conectores Seguros (Secure Sockets Layer o SSL) fue el protocolo de cifrado más ampliamente
+            utilizado para garantizar la seguridad de las comunicaciones a través de Internet antes de ser sustituido
+            por el TLS (Inglés) (Seguridad de la Capa de Transporte, o Transport Layer Security) en 1999. Aunque el
+            desuso del protocolo SSL dio paso a la adopción del TLS, la mayoría de personas sigue refiriéndose a este
+            tipo de tecnología como «SSL».</p>
+        <p>EL SSL proporciona un canal seguro entre dos computadoras o dispositivos que operan a través de Internet o de
+            una red interna. Un ejemplo frecuente es el uso de SSL para proteger las comunicaciones entre un navegador
+            web y un servidor web. Este protocolo cambia la dirección del sitio web de HTTP a HTTPS, donde «S» significa
+            «seguridad».</p>
+        <p>El protocolo HTTP no es seguro, por lo que es susceptible de sufrir interceptaciones de intrusos, ya que los
+            datos transferidos desde el navegador web al servidor web o entre dos terminales se transmiten como texto
+            plano. De esta forma, los intrusos pueden interceptar y visualizar datos sensibles, como datos de tarjetas
+            de crédito o de acceso a cuentas. Al enviar o publicar datos en un navegador que emplea HTTPS, el SSL
+            garantiza que la información está cifrada y protegida frente a interceptaciones.</p>
+
+        <h3>¿Cómo sé si un sitio web está protegido mediante SSL?</h3>
+        <p>Desde el punto de vista técnico, el protocolo SSL es un método transparente para establecer una sesión segura
+            que requiere una intervención mínima por parte del usuario final. En el caso de los navegadores, es posible
+            determinar si un sitio web usa SSL cuando se muestra el candado o la barra de direcciones presenta la URL
+            como HTTPS, en lugar de HTTP.
+        </p>
+        <p>A continuación, se muestra un ejemplo de sitio web protegido mediante SSL en Chrome 56 y otro ejemplo de
+            sitio web no protegido.</p>
+        <img src="./imgs/img-ssl-example.png" alt="">
+        <h3>¿Por qué necesito la seguridad SSL?</h3>
+        <p>Son muchas las transacciones y comunicaciones que realizamos cada día a través de Internet, por lo que usar
+            SSL es en realidad lo más lógico. El SSL es compatible con los siguientes principios de seguridad de la
+            información:</p>
+        <ul>
+            <li><strong>Cifrado:</strong> protege la transmisión de datos (p. ej., de navegador a servidor, de servidor
+                a servidor, de aplicación a aplicación, etc.).</li>
+            <li><strong>Autenticación:</strong> garantiza que el servidor al que se conecta es, en efecto, el servidor
+                correcto.</li>
+            <li><strong>Integridad de los datos:</strong> garantiza que los datos solicitados o enviados son realmente
+                los datos legítimos.</li>
+        </ul>
+        <h2>¿Cómo puedo acceder a la seguridad SSL?</h2>
+        <p>Para adoptar SSL en su empresa, debe adquirir un <a href="./certificado-ssl.html">certificado SSL</a></p>
+    </article>
+</body>
+
+</html>
