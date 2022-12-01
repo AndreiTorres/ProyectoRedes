@@ -356,6 +356,36 @@ button {
 /*-- header area --*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+article {
+     width: 60%;
+     font-family: 'Source Sans Pro';
+     font-size: 18px;
+     margin: 0 auto;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
 #navbarsExample04 > nav > ul {
      margin:0;
