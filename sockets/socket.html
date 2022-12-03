@@ -36,7 +36,16 @@
                     <li><a href="../seguridadweb/certificado-ssl.html">Certificado SSL</a></li>
                   </ul>
                   </div>
-                  <li><a href="socket.html">Programación con Sockets</a></li>
+                  <li class="dropdown"><a href="#">Programación con Sockets &nbsp;<i class="fa fa-caret-down"></i> </a>
+                    <div class="dd">
+                      <div id="u_a_c"><div id="up_arrow"></div></div>
+                     <ul>
+                       
+                       <li><a href="../sockets/socket.html">Sockets</a></li>
+                       <li><a href="../sockets/tcp-udp.html">TCP y UDP</a></li>
+                       <li><a href="../sockets/program.html">Programación</a></li>
+                     </ul>
+                     </div>
                   <li><a href="#">Internet de las Cosas</a></li>
                   <li><a href="#">Nosotros</a></li>
               </ul>
@@ -44,63 +53,34 @@
           </div>
     
     
-        <h1>Programación de aplicaciones con Sockets</h1>
-        <img src="./img/sockets-redes-tcp-udp.png" alt="">
+
         <article>
+          <h1>Sockets</h1>
             <h2>¿Qué es un socket?</h2>
-            <p>Un socket es un punto de conexión entre dos dispositivos en una red que permite a 
-                estos dispositivos comunicarse entre sí. Los sockets son una interfaz que permite a los 
-                programas enviar y recibir datos a través de una red, como Internet.</p>
-            <p>Los sockets se utilizan en la programación de aplicaciones de red, ya que proporcionan
-                 una forma sencilla de establecer y gestionar conexiones entre dispositivos en una red. 
-                 Al utilizar sockets, los programadores pueden desarrollar aplicaciones 
-                que se comuniquen entre sí de manera eficiente y en tiempo real.</p>
-            <p>Existen diferentes tipos de sockets, cada uno con sus propias características y usos. 
-                Por ejemplo, hay sockets de tipo "stream" que permiten enviar y recibir datos en un flujo 
-                continuo, y sockets de tipo "datagram" que permiten enviar y recibir datos en paquetes individuales.</p>
-            <p>En resumen, un socket es una herramienta esencial en la programación de aplicaciones de red, ya que permite a 
-                los programas comunicarse entre sí a través de una red de manera eficiente y en tiempo real.</p>
-            <h2>Programación de aplicaciones</h2>
-            <p>La programación de aplicaciones con sockets es una técnica que permite a dos o más 
-                dispositivos en una red comunicarse entre sí de manera eficiente. Los sockets son una interfaz
-                que permite a los programas enviar y recibir datos a través de una red, como Internet.</p>
-            <h3>¿Cómo se hace una aplicación con sockets?</h3>
-            <p>Para programar una aplicación con sockets, es necesario utilizar un lenguaje de programación que ofrezca 
-                soporte para este tipo de conexiones, como C, C++, Java o Python. En el desarrollo de la aplicación, 
-                se deben seguir algunos pasos básicos:</p>
-    
-            <p>1. Crear un socket: primero se debe crear un socket en el dispositivo que desea establecer una conexión con
-                 otro dispositivo en la red. Este socket se encargará de gestionar el envío y recepción de datos.</p>
-            <p>2. Conectar el socket a una dirección de red: una vez que se ha creado el socket, se debe establecer la conexión
-                 a una dirección de red específica, como una dirección IP o un nombre de dominio.</p>
-            <p>3. Enviar y recibir datos: una vez que el socket está conectado, se pueden enviar y recibir datos a través de él.
-                 Para enviar datos, se utiliza un método llamado "send" y para recibir datos, se utiliza un método llamado "recv".</p>
-            <p>4. Cerrar el socket: cuando se ha terminado de enviar y recibir datos, se debe cerrar el socket para liberar los recursos
-                 utilizados y evitar posibles errores.</p>
-            <p></p>
-            <img src="./imgs/img-honeynetinfra.png" alt="Honeynet">
-            <p>La programación de aplicaciones con sockets es una técnica muy útil para desarrollar aplicaciones que requieren comunicación 
-                en tiempo real, como juegos en línea, chat en vivo o aplicaciones de intercambio de archivos. Además, también se utiliza en 
-                aplicaciones empresariales, como sistemas de gestión de inventario o aplicaciones de atención al cliente. En resumen, la 
-                programación de aplicaciones con sockets es una habilidad valiosa para cualquier desarrollador de software.</p>
-            <p>Además, también es importante tener en cuenta que la programación de aplicaciones con sockets puede ser un poco complicada, 
-                ya que requiere un conocimiento profundo de cómo funciona la red y cómo se gestionan los sockets. Por lo tanto, es recomendable 
-                contar con una buena base de programación y conocimientos de redes para poder desarrollar aplicaciones con sockets de manera efectiva.</p>
-            <p>Como una red trampa no puede detectar ataques en sistemas legítimos, siempre existe el riesgo de que un
-                atacante se mueva lateralmente de la red trampa a un segmento de red de producción para penetrar en la red
-                real. Para mitigar el riesgo, es mejor aislar la red trampa y monitorearla de manera proactiva.</p>
-            <img src="./imgs/img-honeynetworks.png" alt="">
-            <h3></h3>
-            <p></p>
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <p></p>
-    
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ZEitds5Nnx4" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <p>Los sockets son una parte fundamental de la programación de redes, ya que son la forma 
+              en la que los programas se comunican entre sí en una red. Un socket es un punto de conexión
+               entre un programa cliente y un programa servidor, y permite que ambos programas intercambien 
+               datos de forma bidireccional.</p>
+               <img src="./img/Imagen1.jpg" alt="">
+            <p>Se utilizan en una variedad de aplicaciones, como el correo electrónico, la navegación web
+               y el chat en línea. Cada vez que un usuario envía un correo electrónico, por ejemplo, su programa cliente 
+               se comunica con el servidor de correo electrónico utilizando un socket.</p>
+            <p>Los sockets son fundamentales para el funcionamiento de la red, ya que permiten que los programas se comuniquen 
+              entre sí de manera eficiente y segura. Los sockets se basan en el protocolo de red TCP/IP, que establece una serie 
+              de reglas y estándares que deben seguirse para que las comunicaciones entre programas sean posibles.</p>
+            <p>Se utilizan en la programación de redes tanto en entornos cliente-servidor como en entornos peer-to-peer.
+               En un entorno cliente-servidor, un programa cliente se comunica con un programa servidor para acceder a datos o servicios.
+                En un entorno peer-to-peer, dos programas se comunican directamente sin la necesidad de un servidor central.</p>
+            <p>Se crean utilizando una dirección IP y un puerto. La dirección IP es una dirección única que identifica a un equipo
+               en la red, mientras que el puerto es un número que identifica un servicio específico en el equipo. Cuando dos programas se
+                comunican mediante un socket, se utiliza una combinación de dirección IP y puerto para establecer la conexión.</p>
+            <p>Se pueden utilizar en diferentes lenguajes de programación, como C, Java y Python. En la mayoría de los
+               casos, los sockets se utilizan en aplicaciones de red que requieren un alto rendimiento y una comunicación en tiempo real,
+                como juegos en línea y aplicaciones de videollamada.</p>
+                <img src="./img/Imagen2.jpg" alt="">
+            <p>Se utilizan en la programación de dispositivos IoT, ya que permiten que estos dispositivos se comuniquen 
+              con otros dispositivos y servidores en la red. Esto permite que los dispositivos IoT reciban y envíen datos en tiempo real, 
+              lo que les permite ofrecer una funcionalidad más avanzada.</p> 
         </article>
 </body>
 </html>
