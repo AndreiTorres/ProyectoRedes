@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sockets</title>
 </head>
 <body>
+        <div id="container">
     
+            <nav>
+                <div id="logo" >
+                    <a href="../index.html">Infonet</a>
+                  </div>
+              <ul>
+                
+                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Seguridad en la comunicación &nbsp;<i class="fa fa-caret-down"></i></a>
+                  <div class="dd">
+                    <div id="up_arrow"></div>
+                  <ul>
+                    <li><a href="./redperimetral.html">Redes Perimetrales</a></li>
+                    <li><a href="#">Honeynets</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li class="dropdown"><a href="#">Seguridad en la Web &nbsp;<i class="fa fa-caret-down"></i> </a>
+                 <div class="dd">
+                   <div id="u_a_c"><div id="up_arrow"></div></div>
+                  <ul>
+                    
+                    <li><a href="../seguridadweb/https.html">HTTPS</a></li>
+                    <li><a href="../seguridadweb/ssl.html">SSL</a></li>
+                    <li><a href="../seguridadweb/certificado-ssl.html">Certificado SSL</a></li>
+                  </ul>
+                  </div>
+                  <li class="dropdown"><a href="#">Programación con Sockets &nbsp;<i class="fa fa-caret-down"></i> </a>
+                    <div class="dd">
+                      <div id="u_a_c"><div id="up_arrow"></div></div>
+                     <ul>
+                       
+                       <li><a href="../sockets/socket.html">Sockets</a></li>
+                       <li><a href="../sockets/tcp-udp.html">TCP y UDP</a></li>
+                       <li><a href="../sockets/program.html">Programación</a></li>
+                     </ul>
+                     </div>
+                  <li><a href="#">Internet de las Cosas</a></li>
+                  <li><a href="#">Nosotros</a></li>
+              </ul>
+            </nav>
+          </div>
+    
+    
+
+        <article>
+          <h1>Sockets</h1>
+            <h2>¿Qué es un socket?</h2>
+            <p>Los sockets son una parte fundamental de la programación de redes, ya que son la forma 
+              en la que los programas se comunican entre sí en una red. Un socket es un punto de conexión
+               entre un programa cliente y un programa servidor, y permite que ambos programas intercambien 
+               datos de forma bidireccional.</p>
+               <img src="./img/Imagen1.jpg" alt="">
+            <p>Se utilizan en una variedad de aplicaciones, como el correo electrónico, la navegación web
+               y el chat en línea. Cada vez que un usuario envía un correo electrónico, por ejemplo, su programa cliente 
+               se comunica con el servidor de correo electrónico utilizando un socket.</p>
+            <p>Los sockets son fundamentales para el funcionamiento de la red, ya que permiten que los programas se comuniquen 
+              entre sí de manera eficiente y segura. Los sockets se basan en el protocolo de red TCP/IP, que establece una serie 
+              de reglas y estándares que deben seguirse para que las comunicaciones entre programas sean posibles.</p>
+            <p>Se utilizan en la programación de redes tanto en entornos cliente-servidor como en entornos peer-to-peer.
+               En un entorno cliente-servidor, un programa cliente se comunica con un programa servidor para acceder a datos o servicios.
+                En un entorno peer-to-peer, dos programas se comunican directamente sin la necesidad de un servidor central.</p>
+            <p>Se crean utilizando una dirección IP y un puerto. La dirección IP es una dirección única que identifica a un equipo
+               en la red, mientras que el puerto es un número que identifica un servicio específico en el equipo. Cuando dos programas se
+                comunican mediante un socket, se utiliza una combinación de dirección IP y puerto para establecer la conexión.</p>
+            <p>Se pueden utilizar en diferentes lenguajes de programación, como C, Java y Python. En la mayoría de los
+               casos, los sockets se utilizan en aplicaciones de red que requieren un alto rendimiento y una comunicación en tiempo real,
+                como juegos en línea y aplicaciones de videollamada.</p>
+                <img src="./img/Imagen2.jpg" alt="">
+            <p>Se utilizan en la programación de dispositivos IoT, ya que permiten que estos dispositivos se comuniquen 
+              con otros dispositivos y servidores en la red. Esto permite que los dispositivos IoT reciban y envíen datos en tiempo real, 
+              lo que les permite ofrecer una funcionalidad más avanzada.</p> 
+        </article>
 </body>
 </html>
