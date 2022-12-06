@@ -4,9 +4,206 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- style css -->
+    
+    <link rel="stylesheet" href="../../css/articles.css">
+
+    <!-- Responsive-->
+    <link rel="stylesheet" href="../../css/responsive.css">
+  
+   
+    <link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.min.css">
+  
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <title>IOT</title>
 </head>
 <body>
+  <header>
+    <!-- header inner -->
+    <div class="header">
+       <div class="container-fluid">
+          <div class="row">
+             <div class="col-xl-1 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                <div class="full">
+                   <div class="center-desk">
+                      <div class="logo">
+                         <!--<a href="index.html"><img src="" alt="#" /></a>-->
+                         <a href="../../index.html"> <h1 class="titleHeader">Infonet</h1></a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-11 col-lg-9 col-md-9 col-sm-9">
+                <div class="header_information" >
+                   <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarsExample04">
+                         <nav id="navbarExample0001">
+                         <ul class="navbar-nav mr-auto">
+                            
+                            <li class="nav-item" ><a class="nav-link" href="#">Seguridad en la comunicación &nbsp;</a>
+                               <div class="dd">
+                                 <div id="up_arrow"></div>
+                               <ul>
+                                 <li><a href="../seguridadcomunicacion/seguridad.html">Seguridad en la comunicaci&oacuten</a></li>
+                                 <li><a href="../seguridadcomunicacion/redperimetral.html">Redes Perimetrales</a></li>
+                                 <li><a href="../seguridadcomunicacion/honeynet.html">Honeynets</a></li>
+                               </ul>
+                               </div>
+                             </li>
+
+
+                              <li class="nav-item" ><a class="nav-link" href="#">Seguridad en la web &nbsp;</a>
+                               <div class="dd">
+                                 <div id="up_arrow"></div>
+                               <ul>
+                                  <li><a href="../seguridadweb/https.html">HTTPS</a></li>
+                                  <li><a href="../seguridadweb/ssl.html">SSL</a></li>
+                                  <li><a href="../seguridadweb/certificado-ssl.html">Certificado SSL</a></li>
+                               </ul>
+                               </div>
+                             </li>
+
+                             <li class="nav-item" ><a class="nav-link" href="#">Programación con Sockets &nbsp;</a>
+                               <div class="dd">
+                                 <div id="up_arrow"></div>
+                               <ul>
+                                 <li><a href="../sockets/program.html">Programar con Sockets</a></li>
+                                  <li><a href="../sockets/socket.html">Sockets</a></li>
+                                  <li><a href="../sockets/tcp-udp.html">TCP - UDP</a></li>
+                               </ul>
+                               </div>
+                             </li>
+
+                             <li class="nav-item" ><a class="nav-link" href="#">Internet de las cosas &nbsp;</a>
+                               <div class="dd">
+                                 <div id="up_arrow"></div>
+                               <ul>
+                                  <li><a href="../iot/iot.html">Introducción a IOT</a></li>
+                                  <li><a href="../iot/iot2.html">Funcionamiento</a></li>
+                                  <li><a href="../iot/iot3.html">Barreras y Retos</a></li>
+                               </ul>
+                               </div>
+                             </li>
+                             
+
+
+                         
+                         </ul>
+                      </nav>
+                      </div>
+                   </nav>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </header>
+
     
+    <article>
+      <h1>Introducción a IoT</h1>
+    <img class="imagen" src="./imgs/Img2.webp" alt="">
+        <h3>Historia</h3>
+            <p>El término "Internet de las cosas" (IoT) fue utilizado por primera vez en 1999 por el pionero 
+                tecnológico británico Kevin Ashton para describir un sistema en el que los objetos del mundo 
+                físico podían conectarse a Internet mediante sensores. Ashton acuñó el término para ilustrar 
+                el poder de conectar etiquetas de identificación por radiofrecuencia (RFID) utilizadas en cadenas 
+                de suministro corporativas a Internet para contar y rastrear mercancías sin necesidad de intervención humana.</p>  
+            <p>Si bien el término "Internet de las cosas" es relativamente nuevo, el concepto de combinar computadoras y redes para
+                los dispositivos de monitoreo y control han existido durante décadas. A fines de la década de 1970, por ejemplo, los sistemas para
+                el monitoreo remoto de medidores en la red eléctrica a través de líneas telefónicas ya estaban en uso comercial. 
+                En la década de 1990, los avances en la tecnología inalámbrica permitieron que se generalizaran las soluciones empresariales e 
+                industriales "máquina a máquina" (M2M) para el monitoreo y la operación de equipos. Muchos de estos primeros soluciones M2M 
+                se basaron en redes cerradas especialmente diseñadas y patentadas o específicas de la industria, en lugar de redes 
+                basadas en el Protocolo de Internet (IP) y estándares de Internet.</p>
+            <p>Usar IP para conectar dispositivos que no sean computadoras a Internet no es una idea nueva. El primer “dispositivo” de Internet, 
+                una tostadora habilitada para IP que podía encenderse y apagarse a través de Internet, se presentó en una conferencia de Internet en 1990. 
+                Durante los años siguientes, otras “cosas” fueron habilitadas para IP, incluido una maquina de refrescos en la Universidad Carnegie Mellon 
+                en los EE. UU. y una cafetera en la Trojan Room de la Universidad de Cambridge en el Reino Unido (que permaneció conectada a Internet hasta 2001). 
+                A partir de estos comienzos caprichosos, un sólido campo de investigación y desarrollo en "redes de objetos inteligentes" ayudó a crear la base 
+                para el Internet de las cosas de hoy.</p>
+                <img src="./imgs/Img3.jfif" alt="">
+        <h3>Definición</h3>
+        <p>IoT (Internet of things/Internet de las cosas) es una arquitectura emergente basada
+            en la Internet global que facilita el intercambio de bienes y servicios entre redes de
+            la cadena de suministro y que tiene un impacto importante en la seguridad y
+            privacidad de los actores involucrados.</p>
+        <h3>Iot como evolucion del Interntet</h3>
+        <p>Internet puede ser también una plataforma para dispositivos que se comunican electrónicamente y comparten información y datos
+            específicos con el mundo que les rodea. Así, la IoT puede verse como una verdadera
+            evolución de lo que conocemos como Internet añadiendo una interconectividad más
+            extensa, una mejor percepción de la información y servicios inteligentes más
+            completos. En su mayor parte, se utilizó la Internet para protocolos orientados a la
+            conexión de aplicaciones como HTTP (Protocolo de transferencia de hipertexto)
+            y SMTP (Simple Mail Transfer Protocol). Sin embargo, hoy en día un gran
+            número de dispositivos inteligentes se comunican entre ellos y con otros sistemas
+            de control.</p>
+        <p>Por comparación, Internet ha seguido una ruta sostenida de desarrollo y mejora, pero podría
+            decirse que no ha cambiado mucho. Básicamente sigue conservando el propósito para el
+            que fue diseñada durante la era de ARPANET. Por ejemplo, en los comienzos había varios
+            protocolos de comunicación como AppleTalk, Token Ring e IP. En la actualidad, Internet está
+            estandarizada en gran medida en IP.
+            </p>
+        <p>En este contexto, IoT adquiere gran importancia porque se trata de la primera evolución real
+            de Internet (un salto que conducirá a aplicaciones revolucionarias con el potencial de mejorar
+            drásticamente la manera en que las personas viven, aprenden, trabajan y se entretienen). IoT
+            ya ha logrado que Internet sea sensorial (temperatura, presión, vibración, luz, humedad,
+            estrés), lo que nos permite ser más proactivos y menos reactivos.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fWrY571yHYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article> 
+
+    <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row border-top">
+               
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-md-5 offset-md-1 padding_bottom1">
+                        <h3>Conoce m&aacutes</h3>
+                        <ul class="cont">
+                           <li><a href="../seguridadcomunicacion/redperimetral.html">Redes Perimetrales</a> </li>
+                           <li><a href="../seguridadweb/https.html">Https</a> </li>
+                           <li><a href="../sockets/socket.html">Sockets</a> </li>
+                           <li><a href="../iot/iot.html">IOT</a> </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-5 offset-md-1">
+                        <h3>Nosotros</h3>
+                        <ul class="cont">
+                           <li><a href="../../SobreNosotros.html"> Con&oacutecenos</a> </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>© 2022 todos los derechos reservados. <a href="https://html.design/"> Redes y Seguridad</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="js/jquery.min.js"></script>
+    
+      <script src="js/bootstrap.bundle.min.js"></script>
+    
+    
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 </html>

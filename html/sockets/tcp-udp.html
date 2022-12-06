@@ -18,7 +18,7 @@
   
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <title>Sockets</title>
+    <title>TCP - UDP</title>
 </head>
 <body>
   <header>
@@ -46,7 +46,7 @@
                          <nav id="navbarExample0001">
                          <ul class="navbar-nav mr-auto">
                             
-                            <li class="nav-item" ><a class="nav-link" href="#">Seguridad en la comunicación &nbsp;</a>
+                            <li class="nav-item" ><a class="nav-link" href="#" >Seguridad en la comunicación &nbsp;</a>
                                <div class="dd">
                                  <div id="up_arrow"></div>
                                <ul>
@@ -106,35 +106,33 @@
  </header>
  <!-- end header inner -->
     
-    
-
         <article>
-          <h1>Sockets</h1>
-            <h2>¿Qué es un socket?</h2>
-            <p>Los sockets son una parte fundamental de la programación de redes, ya que son la forma 
-              en la que los programas se comunican entre sí en una red. Un socket es un punto de conexión
-               entre un programa cliente y un programa servidor, y permite que ambos programas intercambien 
-               datos de forma bidireccional.</p>
-               <img class="imagen" src="./img/Imagen1.jpg" alt="">
-            <p>Se utilizan en una variedad de aplicaciones, como el correo electrónico, la navegación web
-               y el chat en línea. Cada vez que un usuario envía un correo electrónico, por ejemplo, su programa cliente 
-               se comunica con el servidor de correo electrónico utilizando un socket.</p>
-            <p>Los sockets son fundamentales para el funcionamiento de la red, ya que permiten que los programas se comuniquen 
-              entre sí de manera eficiente y segura. Los sockets se basan en el protocolo de red TCP/IP, que establece una serie 
-              de reglas y estándares que deben seguirse para que las comunicaciones entre programas sean posibles.</p>
-            <p>Se utilizan en la programación de redes tanto en entornos cliente-servidor como en entornos peer-to-peer.
-               En un entorno cliente-servidor, un programa cliente se comunica con un programa servidor para acceder a datos o servicios.
-                En un entorno peer-to-peer, dos programas se comunican directamente sin la necesidad de un servidor central.</p>
-            <p>Se crean utilizando una dirección IP y un puerto. La dirección IP es una dirección única que identifica a un equipo
-               en la red, mientras que el puerto es un número que identifica un servicio específico en el equipo. Cuando dos programas se
-                comunican mediante un socket, se utiliza una combinación de dirección IP y puerto para establecer la conexión.</p>
-            <p>Se pueden utilizar en diferentes lenguajes de programación, como C, Java y Python. En la mayoría de los
-               casos, los sockets se utilizan en aplicaciones de red que requieren un alto rendimiento y una comunicación en tiempo real,
-                como juegos en línea y aplicaciones de videollamada.</p>
-                <img class="imagen" src="./img/Imagen2.jpg" alt="">
-            <p>Se utilizan en la programación de dispositivos IoT, ya que permiten que estos dispositivos se comuniquen 
-              con otros dispositivos y servidores en la red. Esto permite que los dispositivos IoT reciban y envíen datos en tiempo real, 
-              lo que les permite ofrecer una funcionalidad más avanzada.</p> 
+            <h1>Protocolo TCP y UDP</h1>
+            <p>Los protocolos TCP y UDP son dos protocolos de red utilizados para comunicar dispositivos 
+              en una red.</p>
+              <p>Ambos protocolos son ampliamente utilizados en diferentes aplicaciones de red y se pueden
+                 utilizar con sockets para facilitar la comunicación entre dispositivos en una red. Cada 
+                 protocolo tiene sus propias ventajas y desventajas en diferentes situaciones, por lo que se 
+                 deben elegir en función de las necesidades de la aplicación.</p>
+              <h2>Protocolo TCP</h2>
+              <img class="imagen" src="./img/Imagen3.png" alt="">
+            <p>El protocolo TCP (Transmission Control Protocol) se utiliza para garantizar que los datos se envíen y 
+              reciban de manera fiable y en orden. Cuando se utiliza TCP, se establece una conexión entre dos dispositivos
+               que se mantiene abierta mientras se envían y reciben datos.</p>
+            <p>Para utilizar sockets con TCP, se deben seguir ciertos pasos. En primer lugar, se crea un socket y se establece 
+              una conexión con otro socket en la red utilizando una dirección IP y un puerto específico. Luego, se envían y reciben 
+              datos a través de la conexión establecida.</p>
+            <p>Si algún dato se pierde o se recibe en un orden incorrecto, se reenviará automáticamente hasta que se reciba correctamente.
+               Esto garantiza que la información se envíe y reciba correctamente, aunque puede resultar en una comunicación más lenta que otros protocolos.</p>
+            <p>Los sockets en el protocolo TCP son útiles en aplicaciones que requieren una comunicación fiable y en orden, como sistemas de gestión de bases de 
+              datos en red o aplicaciones de correo electrónico.</p>
+              <h2>Protocolo UDP</h2>
+              <img class="imagen" src="./img/Imagen4.jpg" alt="">
+              <p>El protocolo UDP (User Datagram Protocol) se utiliza para enviar y recibir datos de manera rápida y eficiente, aunque no se garantiza que lleguen
+                 en orden o que se reciban todos. Cuando se utiliza UDP, se envían y reciben datos sin establecer una conexión previa.</p>
+              <p>El protocolo UDP no garantiza que los datos se envíen y reciban de manera fiable y en orden. Si algún dato se pierde o se recibe en un orden 
+                incorrecto, no se reenviará automáticamente. Esto puede resultar en una comunicación más rápida y eficiente, pero no se garantiza la integridad de la información.</p>
+              <p>Los sockets en el protocolo UDP son útiles en aplicaciones que requieren una comunicación rápida y eficiente, como juegos en línea o aplicaciones de mensajería instantánea.</p>
         </article>
 
         <footer>

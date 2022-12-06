@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,9 +18,8 @@
   
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <title>SSL</title>
+    <title>Más a fondo</title>
 </head>
-
 <body>
   <header>
     <!-- header inner -->
@@ -52,7 +50,7 @@
                                <div class="dd">
                                  <div id="up_arrow"></div>
                                <ul>
-                                 <li><a href="../seguridadcomunicacion/seguridad.html">Seguridad en la comunicaci&oacuten</a></li>  
+                                 <li><a href="../seguridadcomunicacion/seguridad.html">Seguridad en la comunicaci&oacuten</a></li>                                     
                                  <li><a href="../seguridadcomunicacion/redperimetral.html">Redes Perimetrales</a></li>
                                  <li><a href="../seguridadcomunicacion/honeynet.html">Honeynets</a></li>
                                </ul>
@@ -106,49 +104,52 @@
        </div>
     </div>
  </header>
- <!-- end header inner -->
-    <article>
-      <h1>SSL (Secure Sockets Layer)</h1>
-    <img class="imagen" src="./imgs/img-ssl.jpg" alt="">
-        <h2>¿Qué es el SSL?</h2>
-        <p>El Nivel de Conectores Seguros (Secure Sockets Layer o SSL) fue el protocolo de cifrado más ampliamente
-            utilizado para garantizar la seguridad de las comunicaciones a través de Internet antes de ser sustituido
-            por el TLS (Inglés) (Seguridad de la Capa de Transporte, o Transport Layer Security) en 1999. Aunque el
-            desuso del protocolo SSL dio paso a la adopción del TLS, la mayoría de personas sigue refiriéndose a este
-            tipo de tecnología como «SSL».</p>
-        <p>EL SSL proporciona un canal seguro entre dos computadoras o dispositivos que operan a través de Internet o de
-            una red interna. Un ejemplo frecuente es el uso de SSL para proteger las comunicaciones entre un navegador
-            web y un servidor web. Este protocolo cambia la dirección del sitio web de HTTP a HTTPS, donde «S» significa
-            «seguridad».</p>
-        <p>El protocolo HTTP no es seguro, por lo que es susceptible de sufrir interceptaciones de intrusos, ya que los
-            datos transferidos desde el navegador web al servidor web o entre dos terminales se transmiten como texto
-            plano. De esta forma, los intrusos pueden interceptar y visualizar datos sensibles, como datos de tarjetas
-            de crédito o de acceso a cuentas. Al enviar o publicar datos en un navegador que emplea HTTPS, el SSL
-            garantiza que la información está cifrada y protegida frente a interceptaciones.</p>
 
-        <h3>¿Cómo sé si un sitio web está protegido mediante SSL?</h3>
-        <p>Desde el punto de vista técnico, el protocolo SSL es un método transparente para establecer una sesión segura
-            que requiere una intervención mínima por parte del usuario final. En el caso de los navegadores, es posible
-            determinar si un sitio web usa SSL cuando se muestra el candado o la barra de direcciones presenta la URL
-            como HTTPS, en lugar de HTTP.
-        </p>
-        <p>A continuación, se muestra un ejemplo de sitio web protegido mediante SSL en Chrome 56 y otro ejemplo de
-            sitio web no protegido.</p>
-        <img class="imagen" src="./imgs/img-ssl-example.png" alt="">
-        <h3>¿Por qué necesito la seguridad SSL?</h3>
-        <p>Son muchas las transacciones y comunicaciones que realizamos cada día a través de Internet, por lo que usar
-            SSL es en realidad lo más lógico. El SSL es compatible con los siguientes principios de seguridad de la
-            información:</p>
-        <ul>
-            <li><strong>Cifrado:</strong> protege la transmisión de datos (p. ej., de navegador a servidor, de servidor
-                a servidor, de aplicación a aplicación, etc.).</li>
-            <li><strong>Autenticación:</strong> garantiza que el servidor al que se conecta es, en efecto, el servidor
-                correcto.</li>
-            <li><strong>Integridad de los datos:</strong> garantiza que los datos solicitados o enviados son realmente
-                los datos legítimos.</li>
-        </ul>
-        <h2>¿Cómo puedo acceder a la seguridad SSL?</h2>
-        <p>Para adoptar SSL en su empresa, debe adquirir un <a href="./certificado-ssl.html">certificado SSL</a></p>
+    
+    <article>
+      <h1>Más a fondo</h1>
+    <img class="imagen" src="./imgs/Img5.webp" alt="">
+        <h3>Funcionamiento</h3>
+         <p>El funcionamiento de los sistemas de IoT tradicionales consiste en enviar, recibir y analizar 
+            los datos de forma permanente en un ciclo de retroalimentación. Según el tipo de tecnología de IoT, 
+            las personas o los sistemas de inteligencia artificial y aprendizaje automático (IA/ML) pueden analizar 
+            estos datos casi de inmediato o durante cierto tiempo.
+            </p>
+        <p>Por ejemplo, para saber cuándo es ideal controlar el termostato antes de volver a casa, el sistema de IoT 
+            puede conectarse a la API de Google Maps y, de este modo, obtener información actual sobre el tráfico en el área. 
+            Además, puede utilizar los datos a largo plazo del automóvil para conocer sus hábitos de conducción. 
+            Por otra parte, las empresas de servicios públicos tienen la posibilidad de analizar los datos de IoT de 
+            los clientes con termostatos inteligentes para optimizar el sistema en general.</p>
+            <img class="imagen" src="./imgs/Img6.png" alt="">
+            <h3>Componentes</h3>
+        <h4>Dispositivos inteligentes</h4>
+         <p>Se trata de dispositivos, como un televisor, una cámara de seguridad o un equipo de ejercicio, a los 
+          que se les dotó de capacidades de computación. Recopila datos de su entorno, de las entradas de los usuarios 
+          o de los patrones de uso y comunica los datos a través de Internet hacia y desde su aplicación de IoT.
+            </p>
+        <h4>Aplicación de IoT</h4>
+         <p>Una aplicación de IoT es un conjunto de servicios y software que integra los datos recibidos de varios 
+          dispositivos de IoT. Utiliza tecnología de machine learning o inteligencia artificial (IA) para analizar estos 
+          datos y tomar decisiones informadas. Estas decisiones se comunican al dispositivo de IoT y este responde de 
+          forma inteligente a las entradas. </p>
+        <h4>Una interfaz de usuario gráfica</h4>
+         <p>El dispositivo de IoT o la flota de dispositivos pueden administrarse a través de una interfaz de usuario gráfica. 
+          sAlgunos ejemplos comunes son una aplicación móvil o un sitio web que pueden utilizarse para registrar y controlar dispositivos inteligentes. </p>    
+          <img class="imagen" src="./imgs/Img1.png" alt="">
+          <h3>Arquitectura de sistemas de IoT</h3>
+         <p>Se puede dividir en cuatro capas:
+            </p>
+          <ul>
+            <li><b>Capa de detección:</b> Sensores, los objetos físicos y la obtención de datos.</li>
+            <li><b>Capa de Intercambio de Datos:</b> Transmisión transparente de datos a través de redes
+              de comunicación. </li>
+            <li><b>Capa de integtración de la información:</b> El procesamiento de la información incierta
+              adquirida de las redes, filtrado de datos no deseados
+              e integración de información principal en
+              conocimiento útil para los servicios y los usuarios
+              finales. </li>
+            <li><b>Capa de servicio de aplicación:</b> Da servicios de contenido a los usuarios. </li>
+          </ul>
     </article>
 
     <footer>
@@ -199,5 +200,4 @@
       <script src="js/custom.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
-
 </html>

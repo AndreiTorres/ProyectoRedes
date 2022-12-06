@@ -237,7 +237,9 @@ button {
      padding: 0;
 }
 
-
+.titleHeader{
+     font-size: 25px ;
+}
 /**-- heading section --**/
 
 .cont >li>a{
@@ -486,7 +488,7 @@ article {
 .logo a {
      font-size: 40px;
      font-weight: bold;
-     text-transform: uppercase;
+    
      color: #fff;
      line-height: 40px;
 }
@@ -619,9 +621,7 @@ article {
      color: #fff !important;
      transition: ease-in all 0.5s;
 }
-
-
-/** about section **/
+/******************************************/
 
 .about {
      background: url(../images/ab_bg.png);
@@ -700,6 +700,86 @@ article {
 
 
 /** mobile section **/
+
+/** about section **/
+
+.right {
+     background: url(../images/ab_bg.png);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     padding: 90px 0;
+}
+
+.right .titlepage {
+     text-align: justify;
+     padding: 0;
+}
+
+.right .titlepage p {
+     color: #292e39;
+     font-size: 17px;
+     line-height: 35px;
+     font-weight: 500;
+     padding: 20px 0px 35px 0px;
+}
+
+.right_img figure {
+     margin: 0;
+}
+
+.right_img figure img {
+     width: 100%;
+}
+
+
+/** end about section **/
+
+
+/** right section **/
+
+.left {
+     background: blue;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     padding: 90px 0;
+}
+
+.left .titlepage {
+     text-align: right;
+     padding: 0;
+}
+
+.left .titlepage h2 {
+     color: #fff;
+}
+
+.left .titlepage span {
+     margin-left: 58px;
+}
+
+.left .titlepage p {
+     color: #fff;
+     font-size: 17px;
+     line-height: 35px;
+     font-weight: 500;
+     padding: 20px 0px 35px 0px;
+}
+
+.left_img figure {
+     margin: 0;
+}
+
+.left_img figure img {
+     width: 100%;
+}
+
+.left .titlepage .read_more {
+     border: #fff solid 3px;
+     color: #fff;
+}
+
+
+/**right section **/
 
 
 /** clients section **/
@@ -932,4 +1012,6 @@ ul.cont li {
 .our_box figure img {
      width: 100%;
 }
+
+/**Se anexo CSS**/
 
